@@ -1,0 +1,6 @@
+def password_generator(username):
+  for index in range(0,len(username)):
+    last= username[-1]
+    middle=username[0:-1]
+    username= last +middle
+    return username
