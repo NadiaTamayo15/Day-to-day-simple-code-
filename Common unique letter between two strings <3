@@ -1,0 +1,13 @@
+def common_letters(string_one,string_two):
+  comm_let=[]
+  if len(string_one) >= len(string_two):
+    for letter in string_one:
+      if letter in string_two and letter not in comm_let:
+        comm_let.append(letter) 
+    return(comm_let)
+    
+  else:
+    for letter in string_two:
+      if letter in string_one and letter not in comm_let:
+        comm_let.append(letter)
+    return(comm_let)
