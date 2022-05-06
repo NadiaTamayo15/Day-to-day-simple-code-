@@ -1,0 +1,3 @@
+author_last_names = []
+for name in author_names:
+  author_last_names.append(name.split()[-1])
