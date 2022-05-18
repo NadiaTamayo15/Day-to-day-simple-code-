@@ -1,0 +1,12 @@
+#Obtain unique letters
+
+letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+
+
+def unique_english_letters(word):
+  unique_letters=[]
+  sum_letters=[]
+  for letter in letters:
+    if letter in word:
+      unique_letters.append(letter)
+  return len(unique_letters)
